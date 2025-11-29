@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #eee;
+}
+
+.content {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.small {
+  display: none;
+  color: #b22222;
+  background: #ffe0e0;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.big {
+  display: inline-block;
+  color: #057c34;
+  background: #d9ffbf;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Show SMALL version when screen width < 600px */
+@media only screen and (max-width: 600px) {
+  .small {
+    display: inline-block;
+  }
+  .big {
+    display: none;
+  }
+}
